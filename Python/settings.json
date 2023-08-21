@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "java.debug.settings.console": "internalConsole",
+    "explorer.compactFolders": false
+}

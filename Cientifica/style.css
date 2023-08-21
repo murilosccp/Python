@@ -1,0 +1,137 @@
+/* Definindo as variáveis de cores */
+:root {
+    --background-color: #222;
+    --keypad-background: #383838;
+    --key-color: #f2f2f2;
+    --key-hover-color: #ddd;
+    --key-active-color: #bbb;
+    --screen-background: #333;
+    --screen-color: #fff;
+  }
+  
+  /* Aplicando as variáveis */
+  body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--keypad-background);
+  }
+  
+  .display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    width: 100%;
+    background-color: var(--screen-background);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #result {
+    font-size: 30px;
+    color: var(--screen-color);
+    background-color: var(--screen-background);
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--key-color);
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button:hover {
+    background-color: var(--key-hover-color);
+  }
+  
+  .button:active {
+    background-color: var(--key-active-color);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Botões laranjas para operações matemáticas */
+  .operation {
+    background-color: orange;
+    color: white;
+  }
+  
+  .operation:hover {
+    background-color: #ff8c00;
+  }
+  
+  .operation:active {
+    background-color: #cc6600;
+  }
+  
+  /* Botões cinzas para funções trigonométricas */
+  .trigo {
+    background-color: #666;
+    color: white;
+  }
+  
+  .trigo:hover {
+    background-color: #999;
+  }
+  
+  .trigo:active {
+    background-color: #333;
+  }
+  
+  /* Botões verdes para funções logarítmicas */
+  .log {
+    background-color: green;
+    color: white;
+  }
+  
+  .log:hover {
+    background-color: #00cc00;
+  }
+  
+  .log:active {
+    background-color: #006600;
+  }
+  
+  /* Botões azuis para números e ponto */
+  .numbers {
+    background-color: #0077be;
+    color: white;
+  }
+  
+  

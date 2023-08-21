@@ -1,0 +1,30 @@
+import turtle
+
+# Configuração inicial
+tela = turtle.Screen()
+tela.bgcolor("black")
+tela.title("Desenho de uma Cobra")
+
+cobra = turtle.Turtle()
+cobra.shape("square")
+cobra.color("green")
+cobra.speed(1)
+
+# Função para mover a cobra para a frente com um determinado tamanho
+def mover_para_frente(tamanho):
+    cobra.penup()
+    cobra.forward(tamanho)
+    cobra.pendown()
+
+# Desenhar a cobra
+tamanho_segmento = 20
+num_segmentos = 15
+
+for _ in range(num_segmentos):
+    mover_para_frente(tamanho_segmento)
+    cobra.stamp()
+    tamanho_segmento += 5
+    cobra.right(30)
+
+# Fechar a janela ao clicar
+tela.exitonclick()
