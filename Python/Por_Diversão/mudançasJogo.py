@@ -172,6 +172,8 @@ while True:
             segmento.goto(1000, 1000)
         
         segmentos.clear()
+        pontuacao = 0
+        nivel = 1
     
     pontuacao_texto.clear()
     pontuacao_texto.write("Pontuação: {}".format(pontuacao), align="center", font=("Courier", 24, "normal"))
