@@ -5,7 +5,7 @@ import random
 # Configuração da tela
 tela = turtle.Screen()
 tela.title("Jogo da Cobra")
-tela.bgcolor("black")
+tela.bgcolor("white")
 tela.setup(width=600, height=600)
 
 # Cabeça da cobra
@@ -106,7 +106,7 @@ tela.onkeypress(mover_direita, "Right")
 
 pontuacao_texto = turtle.Turtle()
 pontuacao_texto.speed(0)
-pontuacao_texto.color("white")
+pontuacao_texto.color("black")
 pontuacao_texto.penup()
 pontuacao_texto.hideturtle()
 pontuacao_texto.goto(0, 260)
@@ -114,7 +114,7 @@ pontuacao_texto.goto(0, 260)
 # Criação do texto do nível
 nivel_texto = turtle.Turtle()
 nivel_texto.speed(0)
-nivel_texto.color("white")
+nivel_texto.color("black")
 nivel_texto.penup()
 nivel_texto.hideturtle()
 nivel_texto.goto(0, 230)
